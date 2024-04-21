@@ -21,11 +21,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 if (j === startCell.x && i === startCell.y) {
                     cell.classList.add('start');
-                    cell.textContent = 'S'; // Add 'S' for start cell
+                    cell.style.backgroundColor = 'green'; 
                 }
                 if (j === finishCell.x && i === finishCell.y) {
                     cell.classList.add('finish');
-                    cell.textContent = 'F'; // Add 'F' for finish cell
+                    cell.style.backgroundColor = 'red'; 
                 }
             }
         }
@@ -98,8 +98,16 @@ document.addEventListener('DOMContentLoaded', function () {
         gameStarted = false;
         playerPosition = null;
         mines = [];
-        createBoard();
-        placeMines();
+        createBoard(); 
+
+        const startCellElement = document.querySelector(`.cell[data-x="${startCell.x}"][data-y="${startCell.y}"]`);
+        startCellElement.classList.add('start');
+        startCellElement.style.backgroundColor = 'green'; 
+
+        const finishCellElement = document.querySelector(`.cell[data-x="${finishCell.x}"][data-y="${finishCell.y}"]`);
+        finishCellElement.classList.add('finish');
+        finishCellElement.style.backgroundColor = 'red'; 
+        
         showMessage('Start at the Green and make it to the Red one space at a time. Oh you also need to avoid the mines!');
         updateBoard();
     }
@@ -108,5 +116,5 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('startBtn').addEventListener('click', startGame);
     document.getElementById('resetBtn').addEventListener('click', resetGame);
 
-    resetGame(); 
+    resetGame();
 });
