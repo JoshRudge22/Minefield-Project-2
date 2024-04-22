@@ -33,8 +33,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function placeMines() {
         for (let i = 0; i < numMines; i++) {
-            let x = Math.floor(Math.random() * boardSize);
-            let y = Math.floor(Math.random() * boardSize);
+            let x, y;
+            while (!x || (x === startCell.x && y === startCell.y)) {
+                x = Math.floor(Math.random() * boardSize);
+                y = Math.floor(Math.random() * boardSize);
+            }
             mines.push({ x, y });
         }
     }
@@ -108,7 +111,7 @@ document.addEventListener('DOMContentLoaded', function () {
         finishCellElement.classList.add('finish');
         finishCellElement.style.backgroundColor = 'red'; 
         
-        showMessage('Start at the Green and make it to the Red one space at a time. Oh you also need to avoid the mines!');
+        showMessage('Starting line on the green, finishing line is the red. You need to get to that finishing line one step at a time!');
         updateBoard();
     }
 
