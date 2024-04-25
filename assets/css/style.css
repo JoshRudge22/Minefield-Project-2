@@ -5,11 +5,13 @@ body {
     height: 100vh;
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #faaec7;
+    background-image: url('../images/background.jpg');
+    background-size: cover;
 }
 
 h1 {
     font-family: "Jersey 25", sans-serif;
+    color: #ffffff;
     font-weight: 400;
     font-size: 80px;
     text-align: center;
@@ -206,6 +208,17 @@ h1 {
 }
 
 @media only screen and (max-width: 465px) {
+    
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-image: url('../images/background.jpg');
+        background-size: cover;
+    }
 
     .board {
         display: grid;
