@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     const boardSize = 8;
-    const numMines = 20;
+    const numMines = 15;
     const startCell = { x: 0, y: 0 };
     const finishCell = { x: boardSize - 1, y: boardSize - 1 };
     let playerPosition;
