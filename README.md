@@ -2,7 +2,7 @@
 The Minesweep game is a fun game aim to for users who are currently looking to pass a couple of minutes in their day.
 You start at the starting line and the aim is to get to the finishing line without hitting the invisible mines that are place around the board.
 
-A link for the game can be found here https://8000-joshrudge22-minefieldpr-doaju9of9pk.ws-eu110.gitpod.io/
+A link for the game can be found here [https://8000-joshrudge22-minefieldpr-doaju9of9pk.ws-eu110.gitpod.io/](https://joshrudge22.github.io/Minefield-Project-2/)
 
 <h2>Site Owner Goals</h2>
 
