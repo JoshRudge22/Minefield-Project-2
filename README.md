@@ -75,6 +75,10 @@ There are 15 mines hidden around the board. Once the user hits a mine they will 
 If the user completes the game by getting to the finishing cell they get a congratulations message and can they click on restart game which randomizes the mines giving the user a new game.
 
 <h2>Testing</h3>
+
+<h3>Am I Responsive?</h3>
+
+![responsive](https://github.com/JoshRudge22/Minefield-Project-2/assets/139856712/7877bcb5-39e3-4885-ab54-d1bad19023e0)
 <h3>Validator Testing
 <h4>HTML</h4>
 o	No errors were found when passing through the official W3C Markup Validator
